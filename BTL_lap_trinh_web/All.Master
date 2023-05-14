@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="All.master.cs" Inherits="BTL_lap_trinh_web.All" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+         <script type="text/javascript" src="Js/booking.js"></script>
+    </asp:ContentPlaceHolder>
+ 
+</head>
+<body>
+    <form id="form1" runat="server">
+         <header>
+            <a href="#" class="logo">Food<span>Fun</span></a>
+            <ul class="navbar">
+                <li><a href="/TrangChu.aspx">Home</a></li>
+                <li><a href="/thongtin.aspx">About</a></li>
+                <li><a href="/menu.aspx">Menu</a></li>
+                <li><a href="/Bookingg.aspx">Booking</a></li>
+            </ul>
+
+            <div class="h-icons">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <div class="bx bx-menu" id="menu" onclick="show_nav_mobie()"></div>
+            </div>
+            <!-- nav mobie -->
+            <ul class="navbar mobie" id="nav_mobie">
+                <i style="font-size: 30px; cursor: pointer; margin-bottom: 15px;margin-left: 20px;" class='bx bx-window-close' onclick="close_nav()"></i>
+                <li><a href="/TrangChu.aspx">Home</a></li>
+                <li><a href="/thongtin.aspx">About</a></li>
+                <li><a href="/menu.aspx">Menu</a></li>
+                <li><a href="/Bookingg.aspx">Booking</a></li>
+            </ul>
+
+
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+            <section class="contact">
+        <div class="main-contact">
+            <div class="contact-content">
+                <h4>Services</h4>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+
+            <div class="contact-content">
+                <h4>Parner</h4>
+                <li><a href="#">Food panda</a></li>
+                <li><a href="#">Foodie</a></li>
+                <li><a href="#">Food Fun</a></li>
+                <li><a href="#">Fresh Food</a></li>
+            </div>
+
+            <div class="contact-content">
+                <h4>Contact</h4>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Press center</a></li>
+                <li><a href="#">Carees</a></li>
+                <li><a href="#">Fag</a></li>
+            </div>
+
+            <div class="contact-content">
+                <h4>Follw US</h4>
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-telegram' ></i></a></li>
+            </div>
+        </div>
+    </section>
+    
+    </form>
+    <script>
+        // var a = document.getElementById("menu");
+        function show_nav_mobie() {
+            document.getElementById("nav_mobie").style.display = 'block';
+        }
+
+        function close_nav() {
+            document.getElementById("nav_mobie").style.display = 'none';
+        }
+
+    </script>
+</body>
+</html>

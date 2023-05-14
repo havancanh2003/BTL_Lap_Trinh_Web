@@ -1,0 +1,272 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* css header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    /* background: transparent; */
+    transition: all .38s ease;
+    padding: 13px 15%;
+    background-color: snow;
+    border-bottom: aliceblue;
+}
+
+/* header logo */
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+header span {
+    color: peachpuff;
+}
+
+/* header menu navbar */
+.navbar {
+    display: flex;
+}
+
+    .navbar a {
+        padding: 5px 10px;
+        margin: 10px 20px;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: 2px solid transparent;
+        transition: all 0.38s ease;
+    }
+
+        .navbar a:hover {
+            color: rgb(238, 225, 212);
+            border-bottom: 2px solid black;
+        }
+
+/* css header icon */
+.h-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    background-color: peachpuff;
+    padding: 10px 20px;
+}
+
+.bx {
+    font-size: 22px;
+    color: black;
+    padding: 5px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#menu {
+    cursor: pointer;
+    font-size: 22px;
+    display: none;
+}
+/* mobie nav */
+.mobie {
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: antiquewhite;
+    padding-top: 40px;
+    display: none;
+    /* transform: translateX(100%); */
+}
+
+    .mobie li {
+        margin-bottom: 30px;
+    }
+
+    .mobie a {
+        padding: 5px 10px;
+        margin: 10px 20px;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: 2px solid transparent;
+        transition: all 0.38s ease;
+    }
+/* css restaurant */
+section {
+    padding: 50px 15% 80px;
+}
+
+.img-restaurant {
+    padding-top: 90px;
+}
+
+    .img-restaurant img {
+        width: 100%;
+        height: auto;
+    }
+
+/* box container */
+.container-box-about {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 0;
+}
+
+.box_about {
+    width: 25%;
+    height: auto;
+    background-color: snow;
+    border-bottom: 1px solid #333;
+    /* box-shadow: */
+}
+
+    .box_about i {
+        font-size: 50px;
+        color: #333;
+    }
+
+
+/* css Food */
+.food {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.img-food {
+    width: 40%;
+    text-align: center;
+}
+
+    .img-food h2 {
+        font-size: 30px;
+        font-weight: 700;
+        padding: 15px;
+    }
+
+    .img-food img {
+        width: 100%;
+        height: auto;
+    }
+
+.lists-food {
+    padding: 10px;
+    width: 55%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 50vh;
+    /* border: 1px solid#333; */
+}
+
+.f_detail {
+    padding: 5px;
+    border-bottom: 1px solid #333;
+}
+
+    .f_detail h3 {
+        cursor: pointer;
+    }
+
+        .f_detail h3:hover {
+            color: brown;
+            /* transform: translateY(-5px);
+    transition: 0.38s; */
+        }
+
+.detail-text {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+    .reverse .lists-food {
+        padding: 10px 0 10px 0;
+    }
+
+/* css footer */
+.contact {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.main-contact {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contact-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: darksalmon;
+    margin-bottom: 10px;
+    /* padding-bottom: 10px; */
+}
+
+    .contact-content h4:hover {
+        transform: translateY(-5px);
+        transition: 0.38s;
+    }
+
+.contact-content i {
+    padding: 0px;
+    margin: 0;
+}
+
+.contact-content li {
+    padding: 5px;
+}
+
+    .contact-content li a {
+        color: #333;
+        font-weight: 500;
+    }
+
+        .contact-content li a:hover {
+            transition: 0.4s;
+            color: peachpuff
+        }
+
+@media only screen and (max-width: 46.1875em ) {
+    #menu {
+        display: block;
+    }
+
+    .h-icons {
+        padding: 1px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .food, .main-contact {
+        flex-direction: column;
+    }
+
+    .img-food, .lists-food {
+        width: 100%;
+    }
+}

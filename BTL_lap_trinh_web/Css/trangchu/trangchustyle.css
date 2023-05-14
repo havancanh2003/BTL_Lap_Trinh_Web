@@ -1,0 +1,368 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* css header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    /* background: transparent; */
+    transition: all .38s ease;
+    padding: 13px 15%;
+    background-color: snow;
+    border-bottom: aliceblue;
+}
+
+/* header logo */
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+header span {
+    color: peachpuff;
+}
+
+/* header menu navbar */
+.navbar {
+    display: flex;
+}
+
+    .navbar a {
+        padding: 5px 10px;
+        margin: 10px 20px;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: 2px solid transparent;
+        transition: all 0.38s ease;
+    }
+
+        .navbar a:hover {
+            color: rgb(238, 225, 212);
+            border-bottom: 2px solid black;
+        }
+
+/* css header icon */
+.h-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    background-color: peachpuff;
+    padding: 10px 20px;
+}
+
+.bx {
+    font-size: 22px;
+    color: black;
+    padding: 5px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#menu {
+    cursor: pointer;
+    /* z-index: 1000; */
+    font-size: 22px;
+    display: none;
+}
+
+/* thuoc tinh chung cac the section */
+section {
+    padding: 250px 15% 80px;
+}
+
+/* css home */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 80vh; */
+}
+
+.img_home img {
+    width: 100%;
+    height: auto;
+}
+
+.conten_p span {
+    font-size: 50px;
+    font-weight: 900;
+    color: peachpuff;
+}
+
+.conten_p h1 {
+    font-size: 50px;
+    font-weight: 900;
+    /* color: peachpuff; */
+}
+
+.conten_p p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.conten_p button {
+    /* margin-top: 15px; */
+    background-color: peachpuff;
+    padding: 15px;
+    border-radius: 5rem;
+    border: none;
+    font-size: 20px;
+}
+
+/* css container */
+.container {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.container_text h2 {
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.container_text p {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.container_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.c-mainbox {
+    width: 20%;
+    height: auto;
+    padding: 5px;
+    border: 1px solid #b49898;
+    border-radius: 20px;
+}
+
+    .c-mainbox:hover {
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+
+.container-img img {
+    width: 100%;
+    height: auto;
+    /* border-bottom: 2px solid #333; */
+}
+
+/* css about */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #333; */
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+    .about img {
+        width: 100%;
+        height: auto;
+    }
+
+.about-text h2 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.about-text p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.about-text a {
+    background-color: peachpuff;
+    padding: 15px;
+    border-radius: 5rem;
+}
+
+/*  css menu */
+.menu {
+    padding-top: 70px;
+}
+
+.main-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.main-text p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.row {
+    width: 22%;
+    /* height: 35vh; */
+    /*  position: relative; */
+}
+
+    .row img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+        .row img:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+/* css footer */
+.contact {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.main-contact {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contact-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: darksalmon;
+    margin-bottom: 10px;
+    /* padding-bottom: 10px; */
+}
+
+    .contact-content h4:hover {
+        transform: translateY(-5px);
+        transition: 0.38s;
+    }
+
+.contact-content i {
+    padding: 0px;
+    margin: 0;
+}
+
+.contact-content li {
+    padding: 5px;
+}
+
+    .contact-content li a {
+        color: #333;
+        font-weight: 500;
+    }
+
+        .contact-content li a:hover {
+            transition: 0.4s;
+            color: peachpuff
+        }
+
+/* mobie nav */
+.mobie {
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: antiquewhite;
+    padding-top: 40px;
+    display: none;
+    /* transform: translateX(100%); */
+}
+
+    .mobie li {
+        margin-bottom: 30px;
+    }
+
+    .mobie a {
+        padding: 5px 10px;
+        margin: 10px 20px;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: 2px solid transparent;
+        transition: all 0.38s ease;
+    }
+/* ipad */
+@media only screen and (max-width: 63.9375em ) and (min-width: 46.25em) {
+    #menu {
+        display: block;
+    }
+
+    .h-icons {
+        padding: 1px;
+    }
+
+    .menu-text p, .navbar {
+        display: none;
+    }
+}
+
+/* mobie */
+@media only screen and (max-width: 46.1875em ) {
+    #menu {
+        display: block;
+    }
+
+    .h-icons {
+        padding: 1px;
+    }
+
+    .row, .c-mainbox {
+        width: 45%;
+    }
+
+    .home, .about, .main-contact {
+        flex-direction: column;
+    }
+
+    .container_box, .menu-content {
+        flex-wrap: wrap;
+    }
+
+    .menu-text p, .navbar {
+        display: none;
+    }
+
+    .c-mainbox {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
